@@ -1,27 +1,26 @@
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 export const Login = () => {
 
     return (
         <>
-        <p>Login page</p>
         <div class="background">
             <div class="shape"></div>
             <div class="shape"></div>
         </div>
-        <form>
-            <h3>Login Here</h3>
+        <form className="login-form">
+            <h3>Login</h3>
 
             <label for="username">Username</label>
-            <input type="text" placeholder="Email or Phone" id="username" />
+            <input type="text" placeholder="Username" id="username" />
 
             <label for="password">Password</label>
             <input type="password" placeholder="Password" id="password" />
 
             <button>Log In</button>
-            <div class="social">
-                <div class="go"><i class="fab fa-google"></i>  Google</div>
-                <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+            <div class="re-route">
+                <p>You don't have an account... please go to the <Link to="/client-register">Register page</Link></p>
             </div>
         </form>
         </>
