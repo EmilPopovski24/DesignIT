@@ -10,7 +10,7 @@ export const Header = () => {
                 <li className="header-li dropdown">I am a Client
                     <div class="dropdown-content">
                         <li className="header-li"><Link to="/client-login">Login</Link></li>
-                        <li className="header-li">Register</li>
+                        <li className="header-li"><Link to="/client-register">Register</Link></li>
                     </div>
                 </li>
                 <li className="header-li dropdown">I am a Seller
