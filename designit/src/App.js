@@ -6,6 +6,9 @@ import { Footer } from './components/Footer/Footer';
 import { Login } from './components/Client/Login/Login';
 import { Register } from './components/Client/Register/Register';
 import { Logout } from './components/Client/Logout/Logout';
+import { SellerLogin } from './components/Seller/Login/SellerLogin';
+import { SellerRegister } from './components/Seller/Register/SellerRegister';
+import { SellerLogout } from './components/Seller/Logout/SellerLogout';
 
 function App() {
 
@@ -18,6 +21,9 @@ function App() {
           <Route path="/client-login" element={<Login />} />
           <Route path="/client-register" element={<Register />} />
           <Route path="/client-logout" element={<Logout />} />
+          <Route path="/seller-login" element={<SellerLogin />} />
+          <Route path="/seller-register" element={<SellerRegister />} />
+          <Route path="/seller-logout" element={<SellerLogout />} />
         </Routes>
       </div>
       <Footer />
