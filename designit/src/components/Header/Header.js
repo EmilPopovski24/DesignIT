@@ -1,4 +1,5 @@
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
 
@@ -8,7 +9,7 @@ export const Header = () => {
             <ul className="header-ul">
                 <li className="header-li dropdown">I am a Client
                     <div class="dropdown-content">
-                        <li className="header-li">Login</li>
+                        <li className="header-li"><Link to="/client-login">Login</Link></li>
                         <li className="header-li">Register</li>
                     </div>
                 </li>
