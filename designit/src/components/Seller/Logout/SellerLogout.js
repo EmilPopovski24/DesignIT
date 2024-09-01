@@ -1,6 +1,6 @@
 
 
-export const Logout = () => {
+export const SellerLogout = () => {
 
     return(
         <>

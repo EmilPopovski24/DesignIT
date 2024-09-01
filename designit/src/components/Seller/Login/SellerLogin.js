@@ -1,6 +1,6 @@
 
 
-export const Login = () => {
+export const SellerLogin = () => {
 
     return(
         <>
