@@ -1,0 +1,24 @@
+.header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    overflow: hidden;
+    background-color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-li {
+    margin:10px;
+    font-weight: bold;
+}
+
+.header-li a {
+    text-decoration: none;
+    color:black
+}
