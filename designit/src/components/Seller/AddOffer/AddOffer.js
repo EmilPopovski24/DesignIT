@@ -4,7 +4,7 @@ export const AddOffer = () => {
 
     return(
         <>
-        <h1 className='addPetHeader'>Add Your Offer</h1>
+        <h1 className='addOfferHeader'>Add Your Offer</h1>
             <section id ="create-page">
                 <form id="create" method="POST">
                     <label htmlFor="task-title">Name</label>
@@ -23,7 +23,6 @@ export const AddOffer = () => {
                     <input type="text" id="color" name="color" placeholder="Color..." className='parameters' />
                     <hr />
                     <label htmlFor="image">Image URL</label> 
-                                  
                     <input type="imageUrl" alt="PetPicture" id="imageUrl" name="imageUrl"  placeholder="Image..." className='parameters' />
                     <hr />
                     <button type="submit" className="addPetBtn">Add Your Pet</button>
