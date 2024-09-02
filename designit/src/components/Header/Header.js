@@ -19,6 +19,7 @@ export const Header = () => {
                         <li className="header-li"><Link to="/seller-register">Register</Link></li>
                     </div>
                 </li>
+                <li className="header-li"><Link to="/offer-request">Request an Offer</Link></li>
                 <li className="header-li">Logout</li>
                 <li className="header-li">About</li>
             </ul>

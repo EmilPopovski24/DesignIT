@@ -10,8 +10,11 @@ import { SellerLogin } from './components/Seller/Login/SellerLogin';
 import { SellerRegister } from './components/Seller/Register/SellerRegister';
 import { SellerLogout } from './components/Seller/Logout/SellerLogout';
 import { About } from './components/About/About';
+import { OfferRequest } from './components/Client/OfferRequest/OfferRequest';
 
 function App() {
+
+
 
   return (
     <div className="App">
@@ -22,6 +25,7 @@ function App() {
           <Route path="/client-login" element={<Login />} />
           <Route path="/client-register" element={<Register />} />
           <Route path="/client-logout" element={<Logout />} />
+          <Route path="/offer-request" element={<OfferRequest />} />
           <Route path="/seller-login" element={<SellerLogin />} />
           <Route path="/seller-register" element={<SellerRegister />} />
           <Route path="/seller-logout" element={<SellerLogout />} />

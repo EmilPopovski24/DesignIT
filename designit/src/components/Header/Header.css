@@ -16,12 +16,13 @@
 .header-li {
     margin:10px;
     font-weight: bold;
+    color:white
 }
 
 .header-li a {
     text-decoration: none;
     color:white
-}
+}   
 
 .header-li dropdown {
     position: relative;
