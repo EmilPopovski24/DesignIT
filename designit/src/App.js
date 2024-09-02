@@ -1,5 +1,6 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import { Home } from './components/Home/Home';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
@@ -11,10 +12,20 @@ import { SellerRegister } from './components/Seller/Register/SellerRegister';
 import { SellerLogout } from './components/Seller/Logout/SellerLogout';
 import { About } from './components/About/About';
 import { OfferRequest } from './components/Client/OfferRequest/OfferRequest';
+import * as sellerService from './services/sellerService';
 
 function App() {
 
+  const navigate = useNavigate();
 
+  const [offers, setOffers] = useState([]);
+
+  useEffect(()=>{
+    sellerService.getAll()
+      .then(result => {
+        setOffers(result)
+      })
+  })
 
   return (
     <div className="App">
