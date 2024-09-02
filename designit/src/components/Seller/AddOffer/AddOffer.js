@@ -25,7 +25,7 @@ export const AddOffer = () => {
                     <label htmlFor="image">Image URL</label> 
                     <input type="imageUrl" alt="PetPicture" id="imageUrl" name="imageUrl"  placeholder="Image..." className='parameters' />
                     <hr />
-                    <button type="submit" className="addPetBtn">Add Your Pet</button>
+                    <button type="submit" className="addPetBtn">Submit the Offer</button>
                 </form>
             </section>
         </>
