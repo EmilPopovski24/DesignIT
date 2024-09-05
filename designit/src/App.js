@@ -28,6 +28,13 @@ function App() {
       })
   })
 
+  const OnAddOfferSubmit  = async(offerData) => {
+    const newOffer = await sellerService.addOffer(offerData);
+    setOffers(state=>[...state, newOffer]);
+    console.log(newOffer)
+    navigate("/home")
+  }
+
   return (
     <div className="App">
       <Header />
@@ -38,7 +45,7 @@ function App() {
           <Route path="/client-register" element={<Register />} />
           <Route path="/client-logout" element={<Logout />} />
           <Route path="/offer-request" element={<OfferRequest />} />
-          <Route path ="/add-offer" element={<AddOffer />} /> 
+          <Route path ="/add-offer" element={<AddOffer OnAddOfferSubmit={OnAddOfferSubmit} />} /> 
           <Route path="/seller-login" element={<SellerLogin />} />
           <Route path="/seller-register" element={<SellerRegister />} />
           <Route path="/seller-logout" element={<SellerLogout />} />

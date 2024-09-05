@@ -1,13 +1,15 @@
-import { useContext } from "react";
+// import { useContext } from "react";
 import { useForm } from "../../../hooks/useForm";
-import { OfferContext } from "../../../contexts/OfferContext";
+// import { OfferContext } from "../../../contexts/OfferContext";
 import "./AddOffer.css";
-import { AuthContext } from "../../../contexts/AuthContext";
+// import { AuthContext } from "../../../contexts/AuthContext";
 
-export const AddOffer = () => {
+export const AddOffer = ({
+    OnAddOfferSubmit
+}) => {
 
     // const user = useContext(AuthContext);
-    const { OnAddOfferSubmit } = useContext(OfferContext);
+    // const { OnAddOfferSubmit } = useContext(OfferContext);
     const {values, changeHandler, onSubmit } = useForm({
         type:'',
         name:'',

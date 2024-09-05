@@ -1,3 +1,4 @@
 import { createContext } from "react";
 
-export const OfferContext = createContext()
+export const OfferContext = createContext();
+
