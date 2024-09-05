@@ -1,0 +1,51 @@
+#create {
+    width:40%;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #f09819;
+    padding: 20px 40px 20px 40px;
+    background-color:#f09819 ;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.parameters {
+    margin-bottom:10px;   
+    display: block;
+    height:30px;
+    width: 80%;
+    padding:2px;
+    padding-left: 5px;
+    border:1px solid #1845ad;
+    border-radius: 2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.addPetBtn {
+    padding:10px;
+    border: none;
+    border-radius: 5px;
+    background-color:#1845ad ;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.addPetHeader {
+    text-align: center;
+    padding:30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#description {
+    min-height: 100px;
+    width: 80%;
+    background-color: #f09819 ;
+}

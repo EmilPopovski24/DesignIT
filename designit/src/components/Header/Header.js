@@ -17,6 +17,7 @@ export const Header = () => {
                     <div className="dropdown-content">
                         <li className="header-li"><Link to="/seller-login">Login</Link></li>
                         <li className="header-li"><Link to="/seller-register">Register</Link></li>
+                        <li className="header-li"><Link to="/add-offer">Add An Offer</Link></li>
                     </div>
                 </li>
                 <li className="header-li"><Link to="/offer-request">Request an Offer</Link></li>

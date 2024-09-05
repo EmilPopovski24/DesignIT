@@ -13,6 +13,7 @@ import { SellerLogout } from './components/Seller/Logout/SellerLogout';
 import { About } from './components/About/About';
 import { OfferRequest } from './components/Client/OfferRequest/OfferRequest';
 import * as sellerService from './services/sellerService';
+import { AddOffer } from './components/Seller/AddOffer/AddOffer';
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/client-register" element={<Register />} />
           <Route path="/client-logout" element={<Logout />} />
           <Route path="/offer-request" element={<OfferRequest />} />
+          <Route path ="/add-offer" element={<AddOffer />} /> 
           <Route path="/seller-login" element={<SellerLogin />} />
           <Route path="/seller-register" element={<SellerRegister />} />
           <Route path="/seller-logout" element={<SellerLogout />} />
