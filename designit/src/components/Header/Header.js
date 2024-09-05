@@ -8,13 +8,13 @@ export const Header = () => {
         <div className="header">
             <ul className="header-ul">
                 <li className="header-li dropdown">I am a Client
-                    <div class="dropdown-content">
+                    <div className="dropdown-content">
                         <li className="header-li"><Link to="/client-login">Login</Link></li>
                         <li className="header-li"><Link to="/client-register">Register</Link></li>
                     </div>
                 </li>
                 <li className="header-li dropdown">I am a Seller
-                    <div class="dropdown-content">
+                    <div className="dropdown-content">
                         <li className="header-li"><Link to="/seller-login">Login</Link></li>
                         <li className="header-li"><Link to="/seller-register">Register</Link></li>
                     </div>
