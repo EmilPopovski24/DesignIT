@@ -1,6 +1,19 @@
+import { useContext } from "react";
+import { useForm } from '../../hooks/useForm';
+import { OfferContext } from "../../../contexts/OfferContext";
 import "./AddOffer.css";
 
 export const AddOffer = () => {
+
+    const { OnAddOfferSubmit } = useContext(OfferContext);
+    const {values, changeHandler, onSubmit } = useForm({
+        type:'',
+        name:'',
+        imageUrl:'',
+        description:'',
+        colors:'',
+        price:'',
+    })
 
     return(
         <>
