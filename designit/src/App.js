@@ -19,7 +19,7 @@ function App() {
 
   const navigate = useNavigate();
 
-  // const [offers, setOffers] = useState([]);
+  const [offers, setOffers] = useState([]);
 
   // useEffect(()=>{
   //   sellerService.getAll()
