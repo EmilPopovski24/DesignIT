@@ -11,6 +11,7 @@ export const SellerLogin = () => {
             <div className="shape"></div>
         </div>
         <form className="login-form">
+
             <h3>Login</h3>
 
             <label htmlFor="username">Username</label>
@@ -19,7 +20,8 @@ export const SellerLogin = () => {
             <label htmlFor="password">Password</label>
             <input type="password" placeholder="Password" id="password" />
 
-            <button>Log In</button>
+            <button>Login</button>
+
             <div className="re-route">
                 <p>You don't have an account... please go to the <Link to="/client-register">Register page</Link></p>
             </div>
