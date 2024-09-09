@@ -1,4 +1,4 @@
-export const request = async (method, url, data) => {
+export const request = async (method, token, url, data) => {
     const options = {};
     
         if(method !== "GET") {
@@ -12,12 +12,12 @@ export const request = async (method, url, data) => {
             }   
         }
     
-        // if(token) {
-        //     options.headers = {
-        //         ...options.headers,
-        //         'X-Authorization': token,
-        //     };
-        // }
+        if(token) {
+            options.headers = {
+                ...options.headers,
+                'X-Authorization': token,
+            };
+        }
     
         const response = await fetch(url, options);
     
