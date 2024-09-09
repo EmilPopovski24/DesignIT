@@ -28,8 +28,8 @@ function App() {
   //     })
   // })
 
-  const OnAddOfferSubmit  = async(offerData) => {
-    const newOffer = await sellerService.addOffer(offerData);
+  const OnAddOfferSubmit  = async(offerData, token) => {
+    const newOffer = await sellerService.addOffer(offerData, token);
     setOffers(state=>[...state, newOffer]);
     console.log(newOffer)
     navigate("/home")
