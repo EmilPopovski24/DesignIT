@@ -1,6 +1,6 @@
 import { request } from "./requester";
 
-const baseUrl = 'http://localhost:3030/data/offers';
+const baseUrl = 'http://localhost:3030/jsonstore/offers';
 
 export const getAll = async() => {
     const result = await request.get(baseUrl);
@@ -8,7 +8,7 @@ export const getAll = async() => {
     return offers;
 };
 
-export const addOffer = async(data, token) => {
-    const result = await request.post(baseUrl, data, token);
+export const addOffer = async(data) => {
+    const result = await request.post(baseUrl, data);
     return result
 };

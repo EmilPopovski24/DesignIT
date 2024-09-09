@@ -21,12 +21,13 @@ function App() {
 
   const [offers, setOffers] = useState([]);
 
-  // useEffect(()=>{
-  //   sellerService.getAll()
-  //     .then(result => {
-  //       setOffers(result)
-  //     })
-  // })
+  useEffect(()=>{
+    sellerService.getAll()
+      .then(result => {
+        setOffers(result)
+        console.log(offers)
+      })
+  })
 
   const OnAddOfferSubmit  = async(offerData, token) => {
     const newOffer = await sellerService.addOffer(offerData, token);
